@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <Button
+                    android:id="@+id/btn_test"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:background="@drawable/select_fun_record" />
+
+            </FrameLayout>
+
+            <ImageView
+                android:id="@+id/impic"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/music_sound_wave_line" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#FFF"
+                android:textSize="30sp"
+                android:text="情緒檢測" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tv_intro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFF"
+        android:text="介紹:
+        透過語料庫分析、心理諮商師的經驗，
+
+        計算使用者說話時的負面情緒分數。
+
+        如何使用:
+
+        點擊人物嘴巴即可開始錄至情緒語句。"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/ToRecordPage"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:background="@drawable/select_next2"
+            android:onClick="to_recordpage"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

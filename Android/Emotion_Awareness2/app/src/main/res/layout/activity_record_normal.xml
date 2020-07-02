@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordNormal"
+    android:background="#fff8dc">
+
+
+    <Button
+        android:id="@+id/btn_startrecord"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/voice_recorder"
+        android:onClick="StartRecord_Normal" />
+
+    <ImageView
+        android:id="@+id/img_recordpeople"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/normal_people_smallear"
+        android:layout_below="@+id/tv_introduction"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv_introduction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:textSize="30sp"
+        android:text="建立 ''語音說話模型''" />
+
+    <TextView
+        android:id="@+id/tv_introduction2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#90000000"
+        android:layout_below="@+id/tv_introduction"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:text="幫助系統認識您平時的聲音" />
+
+    <TextView
+        android:id="@+id/tv_introduction6_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="59dp"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="請念出以下句子:" />
+
+    <TextView
+        android:id="@+id/tv_introduction3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_introduction6_title"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="#90000000"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_introduction4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_introduction6_title"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="#90000000"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/tv_introduction5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tv_introduction6_title"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        android:textColor="#90000000"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:text="" />
+
+    <RelativeLayout
+        android:id="@+id/rela_record"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:layout_marginTop="350dp"
+        android:layout_below="@+id/tv_introduction2">
+
+        <FrameLayout
+            android:id="@+id/fram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:visibility="visible"
+                android:background="@drawable/btn_recordnormal_backgroung"/>
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="4dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/btn_record_background2" />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="22dp"
+                android:layout_height="22dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/btn_record_background3"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:background="@drawable/select_next"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="50dp"
+            android:visibility="invisible"
+            android:onClick="NextText"
+            android:layout_toRightOf="@id/fram"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

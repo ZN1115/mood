@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_angry"
+        android:icon="@drawable/angry"
+        android:title="Angry"/>
+
+    <item
+        android:id="@+id/nav_sad"
+        android:icon="@drawable/sad"
+        android:title="Sad"/>
+
+    <item
+        android:id="@+id/nav_anxious"
+        android:icon="@drawable/anxious"
+        android:title="Anxious"/>
+
+    <item
+        android:id="@+id/nav_scared"
+        android:icon="@drawable/scared"
+        android:title="Scared"/>
+
+    <item
+        android:id="@+id/nav_depressed"
+        android:icon="@drawable/aepressed"
+        android:title="Depressed"/>
+
+</menu>

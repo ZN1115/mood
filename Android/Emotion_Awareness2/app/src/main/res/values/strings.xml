@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Emotion_Awareness2</string>
+    <string name="title_activity_record_normal">RecordNormal</string>
+</resources>

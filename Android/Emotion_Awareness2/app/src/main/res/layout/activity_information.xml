@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cfa972"
+    android:orientation="vertical"
+    tools:context=".information">
+
+    <RelativeLayout
+        android:id="@+id/angrylayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/angryface"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/angry" />
+        <LinearLayout
+            android:id="@+id/aa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/angryface"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:letterSpacing="0.1"
+                android:text="Angry"
+                android:textSize="28sp" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/angryprogressbar"
+                android:layout_width="225dp"
+                android:layout_height="38dp"
+                app:rcBackgroundColor="#000"
+                app:rcBackgroundPadding="2.5dp"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="#6F4F26"
+                app:rcRadius="8dp"
+                app:rcSecondaryProgress="100"
+                app:rcSecondaryProgressColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sadlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/sadface"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/sad" />
+        <LinearLayout
+            android:id="@+id/bb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@id/sadface"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:letterSpacing="0.1"
+                android:text="Sad"
+                android:textSize="28sp" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/sadprogressbar"
+                android:layout_width="225dp"
+                android:layout_height="38dp"
+                app:rcBackgroundColor="#000"
+                app:rcBackgroundPadding="2.5dp"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="#AD6E0F"
+                app:rcRadius="8dp"
+                app:rcSecondaryProgress="100"
+                app:rcSecondaryProgressColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/anxiouslayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/anxiousface"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/anxious" />
+        <LinearLayout
+            android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/anxiousface"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:letterSpacing="0.1"
+                android:text="Anxious"
+                android:textSize="28sp" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/anxiousprogressbar"
+                android:layout_width="225dp"
+                android:layout_height="38dp"
+                app:rcBackgroundColor="#000"
+                app:rcBackgroundPadding="2.5dp"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="#6B5B44"
+                app:rcRadius="8dp"
+                app:rcSecondaryProgress="100"
+                app:rcSecondaryProgressColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/depressedlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/depressedface"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/scared" />
+        <LinearLayout
+            android:id="@+id/dd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/depressedface"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Scared"
+                android:textSize="28sp" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/depressedprogressbar"
+                android:layout_width="225dp"
+                android:layout_height="38dp"
+                app:rcBackgroundColor="#000"
+                app:rcBackgroundPadding="2.5dp"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="#6B3906"
+                app:rcRadius="8dp"
+                app:rcSecondaryProgress="100"
+                app:rcSecondaryProgressColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scaredlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:visibility="invisible"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/scaredface"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/aepressed" />
+        <LinearLayout
+            android:id="@+id/ee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/scaredface"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="Depressed"
+                android:textSize="28sp" />
+
+            <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                android:id="@+id/scaredprogressbar"
+                android:layout_width="225dp"
+                android:layout_height="38dp"
+                app:rcBackgroundColor="#000"
+                app:rcBackgroundPadding="2.5dp"
+                app:rcMax="100"
+                app:rcProgress="0"
+                app:rcProgressColor="#C4934E"
+                app:rcRadius="8dp"
+                app:rcSecondaryProgress="100"
+                app:rcSecondaryProgressColor="#FFF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/tohome"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:visibility="invisible"
+        android:background="@drawable/information_seletor"
+        android:onClick="tohmoe"/>
+
+
+</LinearLayout>
